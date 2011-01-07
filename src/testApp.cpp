@@ -7,9 +7,6 @@ void testApp::setup()
 {	
 	keyControl = false;
 	oPressed = false;
-	shouldStartSong = true;
-	currentSong = 0;
-	oldSong = 0;
 	
 	ofSetFrameRate(60);
 	ofBackground( 0, 0, 0 );
@@ -17,43 +14,10 @@ void testApp::setup()
 	
 	sensing = new Sensing();
 	maskController = new MaskController();
-
-	//songs.push_back(new VimeoAwards());
-	//songs[0]->setBank(1);
 	
-	songs.push_back(new SonOfAGun());
-	songs[0]->setBank(1);
-	songs[0]->createAnimations();
-	
-	songs.push_back(new WhiteNights());
-	songs[1]->setBank(2);
-	
-	songs.push_back(new Perfection());
-	songs[2]->setBank(3);
-	
-	songs.push_back(new Lean());
-	songs[3]->setBank(4);
-	
-	songs.push_back(new WolfAndI());
-	songs[4]->setBank(5);
-	
-	songs.push_back(new BreakTheChain());
-	songs[5]->setBank(6);
-	
-	songs.push_back(new Helicopter());
-	songs[6]->setBank(7);
-	
-	songs.push_back(new Maskerade());
-	songs[7]->setBank(8);
-	
-	songs.push_back(new TurnItUp());
-	songs[8]->setBank(9);
-	
-	songs.push_back(new TurnItUpHans());
-	songs[9]->setBank(10);
-	
-	songs.push_back(new ScreenSaver());
-	songs[10]->setBank(20);
+	song = new SonOfAGun();
+	song->setBank(1);
+	song->createAnimations();
 	
 	midiIn.setVerbose(false);
 	midiIn.listPorts();
@@ -66,14 +30,6 @@ void testApp::setup()
 
 void testApp::update() 
 {	
-	
-	if(shouldStartSong)
-	{
-		songs[oldSong]->destroyAnimations();
-		songs[currentSong]->createAnimations();
-		sensing->forceUpdateControllers();
-	}
-	
 	sensing->update();
 	
 	if(sensing->shouldUpdateControllers())
@@ -81,19 +37,12 @@ void testApp::update()
 		maskController->computeMask(sensing->getBalloons());
 		maskController->computeBounds(sensing->getBalloons());
 		
-		songs[currentSong]->updateControllers(sensing->getBalloons());
-		
-		songs[currentSong]->setMask(maskController->getMask());
-		songs[currentSong]->setBoundsOffset(maskController->getBounds(), sensing->getOffset());
+		song->updateControllers(sensing->getBalloons());
+		song->setMask(maskController->getMask());
+		song->setBoundsOffset(maskController->getBounds(), sensing->getOffset());
 	}
 	
-	if(shouldStartSong)
-	{
-		songs[currentSong]->changeAnimation(0);
-		shouldStartSong = false;
-	}
-	
-	songs[currentSong]->update();
+	song->update();
 }
 
 /* Draw
@@ -101,7 +50,7 @@ void testApp::update()
 
 void testApp::draw() 
 {	
-	songs[currentSong]->draw();
+	song->draw();
 	
 	sensing->draw();
 	
@@ -110,31 +59,6 @@ void testApp::draw()
 		ofSetColor(255, 255, 255);
 	
 		ofDrawBitmapString(ofToString(ofGetFrameRate(), 0), 20, 20);
-	}
-}
-
-/* Change song
-___________________________________________________________ */
-
-void testApp::changeSong(int bankNum)
-{	
-	//if (bankNum >= 0 && bankNum != currentSong) 
-	if (bankNum >= 0) 
-	{
-		for(int i = 0; i < songs.size(); i++)
-		{
-			if(bankNum == songs[i]->getBank())
-			{
-				//songs[currentSong]->destroyAnimations();
-				oldSong = currentSong;
-				currentSong = i;
-				shouldStartSong = true;
-				
-				cout << "-----> SONG CHANGED: " << songs[currentSong]->getName() << endl;
-				
-				break;
-			}
-		}
 	}
 }
 
@@ -152,19 +76,18 @@ void testApp::newMidiMessage(ofxMidiEventArgs& eventArgs)
 		cout << "Byte Two: " << eventArgs.byteTwo << "\n";
 	}
 	
-	if(eventArgs.status == MIDI_CONTROL_CHANGE && eventArgs.byteOne == 0)
-	{	
-		changeSong(eventArgs.byteTwo);
-	}
-	else if(eventArgs.status == MIDI_PROGRAM_CHANGE || eventArgs.status == MIDI_NOTE_ON || eventArgs.status == MIDI_NOTE_OFF)
+	if(!sensing->getRecordMode())
 	{
-		songs[currentSong]->newMidiMessage(eventArgs);
-	}
-	else 
-	{
-		if(DEBUG)
+		if(eventArgs.status == MIDI_PROGRAM_CHANGE || eventArgs.status == MIDI_NOTE_ON || eventArgs.status == MIDI_NOTE_OFF)
 		{
-			cout << "This message was not used \n";
+			song->newMidiMessage(eventArgs);
+		}
+		else 
+		{
+			if(DEBUG)
+			{
+				cout << "This message was not used \n";
+			}
 		}
 	}
 }
@@ -176,23 +99,8 @@ void testApp::keyPressed( int key )
 {
 	sensing->keyPressed(key);
 	
-	// Only do this stuff if keyControl is enabled
 	if(keyControl)
 	{
-		// change song manually
-		if (key == 356) // left arrow
-		{
-			int prevSong = currentSong - 1 < 0 ? 0 : currentSong - 1; 
-			
-			changeSong(songs[prevSong]->getBank());
-		}
-		else if(key == 358) // right arrow
-		{
-			int nextSong = currentSong + 1 >= songs.size() ? songs.size() - 1 : currentSong + 1;
-			
-			changeSong(songs[nextSong]->getBank());
-		}
-		
 		// change animation manually
 		if(key > '0' && key <= '9')
 		{
@@ -200,7 +108,7 @@ void testApp::keyPressed( int key )
 			
 			convert = convert - 1;
 			
-			songs[currentSong]->changeAnimation(convert);
+			song->changeAnimation(convert);
 		}
 		
 		// Blink all balloons in animation
@@ -208,7 +116,7 @@ void testApp::keyPressed( int key )
 		{
 			if (!oPressed) 
 			{
-				songs[currentSong]->currentAnimation()->allOn();
+				song->currentAnimation()->allOn();
 				
 				oPressed = true;
 			}
@@ -240,7 +148,7 @@ void testApp::keyReleased( int key )
 	{
 		if(oPressed)
 		{
-			songs[currentSong]->currentAnimation()->allOff();
+			song->currentAnimation()->allOff();
 		
 			oPressed = false;
 		}

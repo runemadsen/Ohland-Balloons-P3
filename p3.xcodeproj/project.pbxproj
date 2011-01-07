@@ -15,12 +15,10 @@
 		A52053881180C3B200AA9C7F /* BalloonControllerHead.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A52053871180C3B200AA9C7F /* BalloonControllerHead.cpp */; };
 		A52053E81180CFC300AA9C7F /* BalloonController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A52053E71180CFC300AA9C7F /* BalloonController.cpp */; };
 		A52F79F6117CCC6D00F55415 /* Balloon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A52F79F5117CCC6D00F55415 /* Balloon.cpp */; };
-		A53D21D01260BA8D00867CD9 /* VimeoAwards.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A53D21CF1260BA8D00867CD9 /* VimeoAwards.cpp */; };
 		A55400FA1173AA5400665657 /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A55400F91173AA5400665657 /* Animation.cpp */; };
 		A55B58321180B2C300BFCE44 /* AnimationSingingHeads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A55B58311180B2C300BFCE44 /* AnimationSingingHeads.cpp */; };
 		A55E264D11B48C7C000CBC96 /* AnimationHeadsSilence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A55E264C11B48C7C000CBC96 /* AnimationHeadsSilence.cpp */; };
 		A55E265011B48C90000CBC96 /* BalloonControllerHeadSilence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A55E264F11B48C90000CBC96 /* BalloonControllerHeadSilence.cpp */; };
-		A55E267911B49069000CBC96 /* WhiteNights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A55E267811B49069000CBC96 /* WhiteNights.cpp */; };
 		A5691FB0117D22EE008D4C28 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5691FAF117D22EE008D4C28 /* CoreMIDI.framework */; };
 		A575EE5411B543EC00C12B51 /* AnimationBlinker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A575EE5311B543EC00C12B51 /* AnimationBlinker.cpp */; };
 		A575EE5711B5441500C12B51 /* BalloonControllerBlink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A575EE5611B5441500C12B51 /* BalloonControllerBlink.cpp */; };
@@ -28,7 +26,6 @@
 		A575EF0911B567BA00C12B51 /* AnimationEmpty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A575EF0811B567BA00C12B51 /* AnimationEmpty.cpp */; };
 		A580D2DC11F4BB3B007489C2 /* AnimationSweep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A580D2DB11F4BB3B007489C2 /* AnimationSweep.cpp */; };
 		A580D2DF11F4BB55007489C2 /* BalloonControllerSweep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A580D2DE11F4BB55007489C2 /* BalloonControllerSweep.cpp */; };
-		A5A4D7FB11FDD59D008197F5 /* ScreenSaver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5A4D7FA11FDD59D008197F5 /* ScreenSaver.cpp */; };
 		A5B1BEDD11F8C4F5006E2B01 /* MaskController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5B1BEDC11F8C4F5006E2B01 /* MaskController.cpp */; };
 		A5BB5F6911722FAB00CF7D9D /* Sensing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5BB5F6711722FAB00CF7D9D /* Sensing.cpp */; };
 		A5BB5F911172317400CF7D9D /* ofxSimpleGuiButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5BB5F6F1172317400CF7D9D /* ofxSimpleGuiButton.cpp */; };
@@ -72,19 +69,11 @@
 		A5DA3F37118603610047FEED /* Quart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5DA3F29118603610047FEED /* Quart.cpp */; };
 		A5DA3F38118603610047FEED /* Quint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5DA3F2B118603610047FEED /* Quint.cpp */; };
 		A5DA3F39118603610047FEED /* Sine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5DA3F2D118603610047FEED /* Sine.cpp */; };
-		A5F2C554128C5F8300515F91 /* TurnItUp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5F2C553128C5F8300515F91 /* TurnItUp.cpp */; };
-		A5F2C55C128C621800515F91 /* TurnItUpHans.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5F2C55B128C621800515F91 /* TurnItUpHans.cpp */; };
 		A5F306FC11B1AA56003DC6DC /* Song.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5F306FB11B1AA56003DC6DC /* Song.cpp */; };
 		A5F3071311B1B51C003DC6DC /* SonOfAGun.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5F3071211B1B51C003DC6DC /* SonOfAGun.cpp */; };
 		A5F4BD271183E0150015F6AB /* ofxAlphaVideoPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5F4BD231183E0150015F6AB /* ofxAlphaVideoPlayer.cpp */; };
 		A5F4BD281183E0150015F6AB /* ofxQtUtils_alpha.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5F4BD251183E0150015F6AB /* ofxQtUtils_alpha.cpp */; };
 		A5F9AACE1201A08700341107 /* AnimationSingingHeadsSingle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5F9AACD1201A08700341107 /* AnimationSingingHeadsSingle.cpp */; };
-		A5FF4E2411EF75D100463AEA /* Perfection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5FF4E2311EF75D100463AEA /* Perfection.cpp */; };
-		A5FF4E2711EF75D800463AEA /* Lean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5FF4E2611EF75D800463AEA /* Lean.cpp */; };
-		A5FF4E2A11EF75E600463AEA /* WolfAndI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5FF4E2911EF75E600463AEA /* WolfAndI.cpp */; };
-		A5FF4E2D11EF75EF00463AEA /* BreakTheChain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5FF4E2C11EF75EF00463AEA /* BreakTheChain.cpp */; };
-		A5FF4E3011EF75F500463AEA /* Helicopter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5FF4E2F11EF75F500463AEA /* Helicopter.cpp */; };
-		A5FF4E3311EF75FF00463AEA /* Maskerade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5FF4E3211EF75FF00463AEA /* Maskerade.cpp */; };
 		E45BE0AA0E8CC67C009D7055 /* GLee.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE0A90E8CC67C009D7055 /* GLee.a */; };
 		E45BE2E40E8CC69C009D7055 /* rtAudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE2E30E8CC69C009D7055 /* rtAudio.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -171,8 +160,6 @@
 		A52053871180C3B200AA9C7F /* BalloonControllerHead.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BalloonControllerHead.cpp; sourceTree = "<group>"; };
 		A52053E71180CFC300AA9C7F /* BalloonController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BalloonController.cpp; sourceTree = "<group>"; };
 		A52F79F5117CCC6D00F55415 /* Balloon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Balloon.cpp; sourceTree = "<group>"; };
-		A53D21CE1260BA8D00867CD9 /* VimeoAwards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VimeoAwards.h; sourceTree = "<group>"; };
-		A53D21CF1260BA8D00867CD9 /* VimeoAwards.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VimeoAwards.cpp; sourceTree = "<group>"; };
 		A55400F81173AA5400665657 /* Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
 		A55400F91173AA5400665657 /* Animation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Animation.cpp; sourceTree = "<group>"; };
 		A55B58301180B2C300BFCE44 /* AnimationSingingHeads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationSingingHeads.h; sourceTree = "<group>"; };
@@ -181,8 +168,6 @@
 		A55E264C11B48C7C000CBC96 /* AnimationHeadsSilence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimationHeadsSilence.cpp; sourceTree = "<group>"; };
 		A55E264E11B48C90000CBC96 /* BalloonControllerHeadSilence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalloonControllerHeadSilence.h; sourceTree = "<group>"; };
 		A55E264F11B48C90000CBC96 /* BalloonControllerHeadSilence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BalloonControllerHeadSilence.cpp; sourceTree = "<group>"; };
-		A55E267711B49069000CBC96 /* WhiteNights.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteNights.h; sourceTree = "<group>"; };
-		A55E267811B49069000CBC96 /* WhiteNights.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WhiteNights.cpp; sourceTree = "<group>"; };
 		A5691FAF117D22EE008D4C28 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		A575EE5211B543EC00C12B51 /* AnimationBlinker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationBlinker.h; sourceTree = "<group>"; };
 		A575EE5311B543EC00C12B51 /* AnimationBlinker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimationBlinker.cpp; sourceTree = "<group>"; };
@@ -196,8 +181,6 @@
 		A580D2DB11F4BB3B007489C2 /* AnimationSweep.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimationSweep.cpp; sourceTree = "<group>"; };
 		A580D2DD11F4BB55007489C2 /* BalloonControllerSweep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalloonControllerSweep.h; sourceTree = "<group>"; };
 		A580D2DE11F4BB55007489C2 /* BalloonControllerSweep.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BalloonControllerSweep.cpp; sourceTree = "<group>"; };
-		A5A4D7F911FDD59D008197F5 /* ScreenSaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenSaver.h; sourceTree = "<group>"; };
-		A5A4D7FA11FDD59D008197F5 /* ScreenSaver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScreenSaver.cpp; sourceTree = "<group>"; };
 		A5B1BEDB11F8C4F5006E2B01 /* MaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskController.h; sourceTree = "<group>"; };
 		A5B1BEDC11F8C4F5006E2B01 /* MaskController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MaskController.cpp; sourceTree = "<group>"; };
 		A5BB5F6711722FAB00CF7D9D /* Sensing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sensing.cpp; sourceTree = "<group>"; };
@@ -305,10 +288,6 @@
 		A5DA3F2C118603610047FEED /* Quint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quint.h; sourceTree = "<group>"; };
 		A5DA3F2D118603610047FEED /* Sine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sine.cpp; sourceTree = "<group>"; };
 		A5DA3F2E118603610047FEED /* Sine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sine.h; sourceTree = "<group>"; };
-		A5F2C552128C5F8300515F91 /* TurnItUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurnItUp.h; sourceTree = "<group>"; };
-		A5F2C553128C5F8300515F91 /* TurnItUp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TurnItUp.cpp; sourceTree = "<group>"; };
-		A5F2C55A128C621800515F91 /* TurnItUpHans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurnItUpHans.h; sourceTree = "<group>"; };
-		A5F2C55B128C621800515F91 /* TurnItUpHans.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TurnItUpHans.cpp; sourceTree = "<group>"; };
 		A5F306FA11B1AA56003DC6DC /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
 		A5F306FB11B1AA56003DC6DC /* Song.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Song.cpp; sourceTree = "<group>"; };
 		A5F3071111B1B51C003DC6DC /* SonOfAGun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SonOfAGun.h; sourceTree = "<group>"; };
@@ -319,18 +298,6 @@
 		A5F4BD261183E0150015F6AB /* ofxQtUtils_alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxQtUtils_alpha.h; sourceTree = "<group>"; };
 		A5F9AACC1201A08700341107 /* AnimationSingingHeadsSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationSingingHeadsSingle.h; sourceTree = "<group>"; };
 		A5F9AACD1201A08700341107 /* AnimationSingingHeadsSingle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AnimationSingingHeadsSingle.cpp; sourceTree = "<group>"; };
-		A5FF4E2211EF75D100463AEA /* Perfection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Perfection.h; sourceTree = "<group>"; };
-		A5FF4E2311EF75D100463AEA /* Perfection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Perfection.cpp; sourceTree = "<group>"; };
-		A5FF4E2511EF75D800463AEA /* Lean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lean.h; sourceTree = "<group>"; };
-		A5FF4E2611EF75D800463AEA /* Lean.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lean.cpp; sourceTree = "<group>"; };
-		A5FF4E2811EF75E600463AEA /* WolfAndI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WolfAndI.h; sourceTree = "<group>"; };
-		A5FF4E2911EF75E600463AEA /* WolfAndI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WolfAndI.cpp; sourceTree = "<group>"; };
-		A5FF4E2B11EF75EF00463AEA /* BreakTheChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BreakTheChain.h; sourceTree = "<group>"; };
-		A5FF4E2C11EF75EF00463AEA /* BreakTheChain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BreakTheChain.cpp; sourceTree = "<group>"; };
-		A5FF4E2E11EF75F500463AEA /* Helicopter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helicopter.h; sourceTree = "<group>"; };
-		A5FF4E2F11EF75F500463AEA /* Helicopter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Helicopter.cpp; sourceTree = "<group>"; };
-		A5FF4E3111EF75FF00463AEA /* Maskerade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maskerade.h; sourceTree = "<group>"; };
-		A5FF4E3211EF75FF00463AEA /* Maskerade.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Maskerade.cpp; sourceTree = "<group>"; };
 		E45BE0390E8CC647009D7055 /* FreeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FreeImage.h; path = ../../../libs/freeimage/include/FreeImage.h; sourceTree = SOURCE_ROOT; };
 		E45BE03F0E8CC650009D7055 /* fmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fmod.h; path = ../../../libs/fmodex/include/fmod.h; sourceTree = SOURCE_ROOT; };
 		E45BE0400E8CC650009D7055 /* fmod.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = fmod.hpp; path = ../../../libs/fmodex/include/fmod.hpp; sourceTree = SOURCE_ROOT; };
@@ -352,7 +319,7 @@
 		E45BE9770E8CC7DD009D7055 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
 		E45BE9790E8CC7DD009D7055 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
-		E4B69B5B0A3A1756003C02F2 /* 2tracksDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2tracksDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69B5B0A3A1756003C02F2 /* p3Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = p3Debug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = testApp.cpp; path = src/testApp.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1F0A3A1BDC003C02F2 /* testApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = testApp.h; path = src/testApp.h; sourceTree = SOURCE_ROOT; };
@@ -799,28 +766,6 @@
 			children = (
 				A5F3071111B1B51C003DC6DC /* SonOfAGun.h */,
 				A5F3071211B1B51C003DC6DC /* SonOfAGun.cpp */,
-				A55E267711B49069000CBC96 /* WhiteNights.h */,
-				A55E267811B49069000CBC96 /* WhiteNights.cpp */,
-				A5FF4E2211EF75D100463AEA /* Perfection.h */,
-				A5FF4E2311EF75D100463AEA /* Perfection.cpp */,
-				A5FF4E2511EF75D800463AEA /* Lean.h */,
-				A5FF4E2611EF75D800463AEA /* Lean.cpp */,
-				A5FF4E2811EF75E600463AEA /* WolfAndI.h */,
-				A5FF4E2911EF75E600463AEA /* WolfAndI.cpp */,
-				A5FF4E2B11EF75EF00463AEA /* BreakTheChain.h */,
-				A5FF4E2C11EF75EF00463AEA /* BreakTheChain.cpp */,
-				A5FF4E2E11EF75F500463AEA /* Helicopter.h */,
-				A5FF4E2F11EF75F500463AEA /* Helicopter.cpp */,
-				A5FF4E3111EF75FF00463AEA /* Maskerade.h */,
-				A5FF4E3211EF75FF00463AEA /* Maskerade.cpp */,
-				A5A4D7F911FDD59D008197F5 /* ScreenSaver.h */,
-				A5A4D7FA11FDD59D008197F5 /* ScreenSaver.cpp */,
-				A53D21CE1260BA8D00867CD9 /* VimeoAwards.h */,
-				A53D21CF1260BA8D00867CD9 /* VimeoAwards.cpp */,
-				A5F2C552128C5F8300515F91 /* TurnItUp.h */,
-				A5F2C553128C5F8300515F91 /* TurnItUp.cpp */,
-				A5F2C55A128C621800515F91 /* TurnItUpHans.h */,
-				A5F2C55B128C621800515F91 /* TurnItUpHans.cpp */,
 			);
 			name = songs;
 			sourceTree = "<group>";
@@ -1026,7 +971,7 @@
 			isa = PBXGroup;
 			children = (
 				A5BB5F6B1172317400CF7D9D /* addons */,
-				E4B69B5B0A3A1756003C02F2 /* 2tracksDebug.app */,
+				E4B69B5B0A3A1756003C02F2 /* p3Debug.app */,
 				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
 				E4B69E1C0A3A1BDC003C02F2 /* src */,
 				E4C2422310CC54B6004149E2 /* openFrameworks */,
@@ -1141,9 +1086,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E4B69B5A0A3A1756003C02F2 /* 2tracks */ = {
+		E4B69B5A0A3A1756003C02F2 /* p3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "2tracks" */;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "p3" */;
 			buildPhases = (
 				E4B69B580A3A1756003C02F2 /* Sources */,
 				E4B69B590A3A1756003C02F2 /* Frameworks */,
@@ -1156,9 +1101,9 @@
 			dependencies = (
 				E4C2422810CC54DA004149E2 /* PBXTargetDependency */,
 			);
-			name = 2tracks;
+			name = p3;
 			productName = myOFApp;
-			productReference = E4B69B5B0A3A1756003C02F2 /* 2tracksDebug.app */;
+			productReference = E4B69B5B0A3A1756003C02F2 /* p3Debug.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1166,7 +1111,7 @@
 /* Begin PBXProject section */
 		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "2tracks" */;
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "p3" */;
 			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 0;
 			mainGroup = E4B69B4A0A3A1720003C02F2;
@@ -1180,7 +1125,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				E4B69B5A0A3A1756003C02F2 /* 2tracks */,
+				E4B69B5A0A3A1756003C02F2 /* p3 */,
 			);
 		};
 /* End PBXProject section */
@@ -1271,17 +1216,10 @@
 				A5F3071311B1B51C003DC6DC /* SonOfAGun.cpp in Sources */,
 				A55E264D11B48C7C000CBC96 /* AnimationHeadsSilence.cpp in Sources */,
 				A55E265011B48C90000CBC96 /* BalloonControllerHeadSilence.cpp in Sources */,
-				A55E267911B49069000CBC96 /* WhiteNights.cpp in Sources */,
 				A575EE5411B543EC00C12B51 /* AnimationBlinker.cpp in Sources */,
 				A575EE5711B5441500C12B51 /* BalloonControllerBlink.cpp in Sources */,
 				A575EEDE11B5539E00C12B51 /* AnimationFullVideo.cpp in Sources */,
 				A575EF0911B567BA00C12B51 /* AnimationEmpty.cpp in Sources */,
-				A5FF4E2411EF75D100463AEA /* Perfection.cpp in Sources */,
-				A5FF4E2711EF75D800463AEA /* Lean.cpp in Sources */,
-				A5FF4E2A11EF75E600463AEA /* WolfAndI.cpp in Sources */,
-				A5FF4E2D11EF75EF00463AEA /* BreakTheChain.cpp in Sources */,
-				A5FF4E3011EF75F500463AEA /* Helicopter.cpp in Sources */,
-				A5FF4E3311EF75FF00463AEA /* Maskerade.cpp in Sources */,
 				A517567D11F0C4F1008D5B3B /* AnimationImages.cpp in Sources */,
 				A517568011F0C4FB008D5B3B /* BalloonControllerImage.cpp in Sources */,
 				A51756F211F0CF7D008D5B3B /* AnimationFullImage.cpp in Sources */,
@@ -1290,11 +1228,7 @@
 				A580D2DF11F4BB55007489C2 /* BalloonControllerSweep.cpp in Sources */,
 				A5B1BEDD11F8C4F5006E2B01 /* MaskController.cpp in Sources */,
 				A50BA05B11FA0A9200AF5DCE /* ofxImage.cpp in Sources */,
-				A5A4D7FB11FDD59D008197F5 /* ScreenSaver.cpp in Sources */,
 				A5F9AACE1201A08700341107 /* AnimationSingingHeadsSingle.cpp in Sources */,
-				A53D21D01260BA8D00867CD9 /* VimeoAwards.cpp in Sources */,
-				A5F2C554128C5F8300515F91 /* TurnItUp.cpp in Sources */,
-				A5F2C55C128C621800515F91 /* TurnItUpHans.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1576,7 +1510,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "2tracks" */ = {
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "p3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B69B4E0A3A1720003C02F2 /* Debug */,
@@ -1586,7 +1520,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "2tracks" */ = {
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "p3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B69B600A3A1757003C02F2 /* Debug */,

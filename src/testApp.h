@@ -7,19 +7,8 @@
 #include "ofxMidi.h"
 
 #include "Song.h"
-#include "VimeoAwards.h"
 #include "SonOfAGun.h"
-#include "WhiteNights.h"
-#include "Perfection.h"
-#include "Lean.h"
-#include "WolfAndI.h"
-#include "BreakTheChain.h"
-#include "Helicopter.h"
-#include "Maskerade.h"
 #include "MaskController.h"
-#include "ScreenSaver.h"
-#include "TurnItUp.h"
-#include "TurnItUpHans.h"
 
 class testApp : public ofSimpleApp, public ofxMidiListener
 {
@@ -28,8 +17,6 @@ public:
 	void setup();
     void update();
     void draw();
-	
-	void changeSong(int bankNum);
 	
     void keyPressed( int key );
 	void keyReleased( int key );
@@ -49,11 +36,7 @@ public:
 	
 	void newMidiMessage(ofxMidiEventArgs& eventArgs);
 	
-	vector <Song *> songs;
-	int currentSong;
-	int oldSong;
-	
-	bool shouldStartSong;
+	Song * song;
 	
 	bool oPressed;
 	bool keyControl;
