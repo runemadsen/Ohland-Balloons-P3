@@ -108,21 +108,10 @@ void SonOfAGun::createAnimations()
 	_animations.push_back(animation4);
 	
 	/*-------------------------------------------------------------
-	 Falling stars
-	 --------------------------------------------------------------*/
+		Sunset video over beach
+	--------------------------------------------------------------*/
 	
-	AnimationStars * animation5 = new AnimationStars();
-	animation5->setMidiNotes(midiNotes);
-	_animations.push_back(animation5);
-	
-	/*-------------------------------------------------------------
-	 Sunset video over beach
-	 --------------------------------------------------------------
-	 
-	 _animations.push_back(new AnimationFullVideo("sunriseAUS.mov"));
-	 */
-	
-	
+	_animations.push_back(new AnimationFullVideo("sunriseAUS.mov"));
 	
 	/*-------------------------------------------------------------
 		Extra stuff we don't use right now
